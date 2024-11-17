@@ -12,22 +12,41 @@
 - 🌱 Simple API setup for easy extension
 - 🔒 Environment configuration with **dotenv**
 - ⚡ Supports **nodemon** for automatic reloading during development
+- 🖥 Easy project setup via CLI
 
 ---
 
 ## 🚀 Installation
 
-- To use this package in your project, simply install it via npm:
+### Global Installation
+
+You can install **mvc-express-setup** to globally to easily create an Express.js app setup from anywhere on your system.
+
+1. **Install Globally**:
+
+   Run the following command to install the package globally:
+
+   ```bash
+   npm install -g mvc-express-setup
+
+* After installing, you can use the
+   ```
+    setup-express-app
   ```
-    npm install mvc-express-setup
-  ```     
-- Or, if you prefer to quickly set up the Express server, you can run the setup command directly:
+  command from anywhere to set up a new Express.js project.
 
-    ```
-    npx setup-express
-    ```
+## ⚡️ How It Works
+#### Run the Setup Command:
+  After Runing the `npx setup-express-app` comand in the desired directory.
+- The tool will prompt you to specify a directory. 
+   #### You can either:
+- Enter a directory name to create and set up the project there.
+- Enter . to set up the project in the current directory.
+#### Automatic Project Setup:
+- The tool will create the required files to your selected directory, initialize package.json if it doesn't already exist, and install the necessary dependencies.
 
-- This will automatically generate the basic folder structure and files needed for your project.
+#### Start Coding:
+- After running the setup, you'll have a basic Express.js app ready with the MVC architecture in place. From here, you can focus on writing your actual application logic.
 
 ## 📂 Project Structure
 - After setting up, your project will have the following structure:
@@ -64,12 +83,12 @@
 - This will start the server using the nodemon package for automatic reloading during development.
 
 #### 🔧 Usage
- - After setting up the project, you can extend it by adding your own routes, controllers, and models.
-   Now you don't need to same basic setup code again and again you can start your real code after setup this project directly by CLI only.
+  -  After setting up the project, you can start building your backend by adding your own routes, controllers, and models.
+ - The mvc-express-setup package provides the base structure, allowing you to skip setting up the same basic configuration every time you start a new project.
 
 #### 📝 Available Scripts
   - Start the server: Run npm start to start the server.
-  - Run with nodemon: For automatic server reloading, run npx nodemon src/server.js.
+  - Run with nodemon: For automatic server reloading, run npx nodemon server.js.
   - Run tests: You can add tests to your project (optional).
 
 #### 📦 Available Dependencies
@@ -78,3 +97,8 @@
   - dotenv: Loads environment variables from a .env file
   - nodemon: Automatically restarts the server during development
 
+### ⚙️ Customization
+- You can extend the project by adding more models, controllers, routes, and other configurations as per your needs. The project is structured in a way that supports modular and scalable development.
+
+### 🎉 Conclusion
+With mvc-express-setup, you can quickly set up a fully functional Express.js backend project. The tool automates the repetitive setup process, allowing you to focus on building your application rather than configuring basic settings.
